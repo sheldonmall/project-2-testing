@@ -1,4 +1,4 @@
- // Table definition: product
+ // Table definition: category
 module.exports = function (sequelize, DataTypes) {   
   var Category = sequelize.define("category", {    
     category_name: {

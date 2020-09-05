@@ -4,8 +4,8 @@ module.exports = function (sequelize, DataTypes) {
     customer_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: user,
-        key: id
+        model: 'user',
+        key: 'id'
       },
       allowNull: false,
       validate: {
@@ -15,8 +15,8 @@ module.exports = function (sequelize, DataTypes) {
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: product,
-        key: id
+        model: 'product',
+        key: 'id'
       },
       allowNull: false,
       validate: {

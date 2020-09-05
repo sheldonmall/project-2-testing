@@ -11,8 +11,8 @@ module.exports = function (sequelize, DataTypes) {
     category_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: category,
-        key: id
+        model: 'category',
+        key: 'id'
       },
       allowNull: false,
       validate: {

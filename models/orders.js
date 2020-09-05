@@ -4,7 +4,7 @@ module.exports = function (sequelize, DataTypes) {
     customer_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
+        model: 'users',
         key: 'id'
       },
       allowNull: false,
@@ -15,7 +15,7 @@ module.exports = function (sequelize, DataTypes) {
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'product',
+        model: 'products',
         key: 'id'
       },
       allowNull: false,
